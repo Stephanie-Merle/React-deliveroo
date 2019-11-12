@@ -253,7 +253,12 @@ h2 {
     height: 18vh;
   }
   .category {
-    width: 60%;
+    width: 100%;
+    max-width: 500px;
+    min-width: 350px;
+  }
+  .basket {
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {

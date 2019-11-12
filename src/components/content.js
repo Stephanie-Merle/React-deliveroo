@@ -20,7 +20,9 @@ const Content = props => {
     <>
       <div className="content">
         <div className="wrapper">
-          <div className="category">{listing}</div>
+          <div className="category" action={el => props.action(el)}>
+            {listing}
+          </div>
           <Basket />
         </div>
       </div>

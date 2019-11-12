@@ -18,10 +18,14 @@ const App = () => {
   useEffect(() => {
     fetchingData();
   }, []);
+  const handleOrder = el => {
+    setOrder([...order, el]);
+    console.log(order);
+  };
   return (
     <>
       {loading ? <Spinner /> : <Header {...data} />}
-      {loading ? <Spinner /> : <Content {...data} />}
+      {loading ? <Spinner /> : <Content {...data} action={handleOrder} />}
     </>
   );
 };
