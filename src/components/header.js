@@ -1,8 +1,7 @@
 import React from "react";
 import Logo from "../assets/deliveroo.png";
-import Cover from "../assets/cover.png";
 
-const Header = () => {
+const Header = props => {
   return (
     <div>
       <div className="wrapper navbar">
@@ -11,10 +10,10 @@ const Header = () => {
       <hr />
       <div className="wrapper title">
         <div>
-          <h1>MY TITLE</h1>
-          <p>Description</p>
+          <h1>{props.data.restaurant.name}</h1>
+          <p>{props.data.restaurant.description}</p>
         </div>
-        <img src={Cover} alt="restaurant cover" />
+        <img src={props.data.restaurant.picture} alt="restaurant cover" />
       </div>
     </div>
   );
