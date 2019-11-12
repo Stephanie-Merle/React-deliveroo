@@ -34,7 +34,13 @@ const Card = props => {
           ) : null}
         </p>
       </div>
-      {props.picture ? <img src={props.picture} alt="item preview" /> : null}
+      {props.picture ? (
+        <img
+          src={props.picture}
+          onError={e => (e.target.style.display = "none")}
+          alt="item preview"
+        />
+      ) : null}
     </div>
   );
 };
