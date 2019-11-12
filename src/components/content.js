@@ -17,12 +17,14 @@ const Content = props => {
   );
 
   return (
-    <div className="content">
-      <div className="wrapper">
-        <div className="category">{listing}</div>
+    <>
+      <div className="content">
+        <div className="wrapper">
+          <div className="category">{listing}</div>
+          <Basket />
+        </div>
       </div>
-      <Basket />
-    </div>
+    </>
   );
 };
 

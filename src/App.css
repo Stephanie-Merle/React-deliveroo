@@ -21,6 +21,7 @@ hr {
   margin: auto;
   width: 96vw;
   max-width: 1200px;
+  z-index: 1;
 }
 .title {
   margin: 2em auto;
@@ -53,7 +54,7 @@ h2 {
   font-weight: 700;
 }
 .content {
-  background-color: #f3f5f5;
+  background-color: #e9ebeb;
   position: relative;
 }
 .category {
@@ -128,13 +129,31 @@ h2 {
   transition-duration: 200ms;
 }
 .basket {
-  width: 25%;
-  height: 250px;
   background-color: white;
-  position: absolute;
-  top: 45px;
-  left: 68%;
-  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  margin-top: 60px;
+  left: 70%;
+  height: 200px;
+  width: 25%;
+  z-index: 100;
+  border-radius: 0.3em;
+}
+.basket button {
+  display: flex;
+  margin: 0.5em auto;
+  background-color: #bac3c3;
+  color: white;
+  justify-content: center;
+  width: 90%;
+  height: 50px;
+  border-radius: 0.3em;
+}
+.basket div {
+  color: #838585;
+  text-align: center;
+  margin-top: 20%;
+  align-self: center;
 }
 
 .loading {
