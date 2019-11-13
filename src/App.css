@@ -134,6 +134,21 @@ h2 {
 }
 .orders * {
   display: inline-flex;
+  text-align: center;
+}
+.order div * {
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+.basket div:first-child {
+  margin: 0 auto;
+}
+.basket div {
+  margin: 0.4em auto;
+}
+.green {
+  color: greenyellow;
 }
 .basket {
   background-color: white;
@@ -260,6 +275,12 @@ h2 {
 .lds-spinner div:nth-child(12) {
   transform: rotate(330deg);
   animation-delay: 0s;
+}
+.green button {
+  background-color: #5acdbd;
+}
+.green svg {
+  color: #5acdbd;
 }
 @keyframes lds-spinner {
   0% {
