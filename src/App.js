@@ -9,7 +9,7 @@ import Spinner from "./components/spinner";
 const App = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
-  const [order, setOrder] = useState([]);
+
   const fetchingData = async () => {
     const myData = await axios.get("https://deliveroo-api.now.sh/menu");
     setData(myData);
@@ -18,14 +18,11 @@ const App = () => {
   useEffect(() => {
     fetchingData();
   }, []);
-  const handleOrder = el => {
-    setOrder([...order, el]);
-    console.log(order);
-  };
+
   return (
     <>
       {loading ? <Spinner /> : <Header {...data} />}
-      {loading ? <Spinner /> : <Content {...data} action={handleOrder} />}
+      {loading ? <Spinner /> : <Content {...data} />}
     </>
   );
 };
