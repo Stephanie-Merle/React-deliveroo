@@ -1,3 +1,9 @@
+# REACT FRONT PROJECT
+
+CI with Netlify =>>>> https://my-deliveroo.netlify.com/ <br />
+Website clode 'Deliveroo'. Fetching data from API to display cards. <br />
+Basket to follow the user when scrolling down.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
